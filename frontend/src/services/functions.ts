@@ -109,10 +109,10 @@ export async function getPosts(filters: Filter): Promise<Post[]> {
   });
 
   if (filters.query.length > 0) {
-    const titleFilter = `&filter[_and][2][_or][0][titulo][_contains]=${filters.query}`;
-    const summaryFilter = `&filter[_and][2][_or][1][summary][_contains]=${filters.query}`;
-    const contentFilter = `&filter[_and][2][_or][2][content][_contains]=${filters.query}`;
-    const authorFilter = `&filter[_and][2][_or][3][author][name][_contains]=${filters.query}`;
+    const titleFilter = `&filter[_and][2][_or][0][titulo][_icontains]=${filters.query}`;
+    const summaryFilter = `&filter[_and][2][_or][1][summary][_icontains]=${filters.query}`;
+    const contentFilter = `&filter[_and][2][_or][2][content][_icontains]=${filters.query}`;
+    const authorFilter = `&filter[_and][2][_or][3][author][name][_icontains]=${filters.query}`;
 
     const finalFilter =
       titleFilter + summaryFilter + contentFilter + authorFilter;
