@@ -29,7 +29,7 @@ function Blog({ blogId }) {
           src={blog.image}
           className="w-full max-h-[600px] object-cover m-auto"
         />
-        <div className="border-t-[2px] border-b-[2px] mt-8 flex text-xs py-4  justify-between">
+        <div className="border-t-[2px] border-b-[2px] mt-8 flex text-xs py-4 flex-col md:flex-row justify-between gap-2 md:gap-0">
           <div className="flex h-full  ">
             {/* <RiAccountCircleFill className="h-[50px] w-auto text-[#7678FF]" /> */}
             <img

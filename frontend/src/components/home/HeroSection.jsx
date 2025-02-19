@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
           <a
             href={`/blog/${targetPost}`}
-            className="flex justify-center items-center text-lg rounded-md border-2 border-white bg-white font-semibold text-[#6163d4] px-3 py-1 w-1/3 transition duration-300 ease-in-out hover:bg-white hover:text-[#6163d4] hover:scale-105 gap-2"
+            className="flex justify-center items-center text-lg rounded-md border-2 border-white bg-white font-semibold text-[#6163d4] px-3 py-1 w-1/2 sm:w-1/3 transition duration-300 ease-in-out hover:bg-white hover:text-[#6163d4] hover:scale-105 gap-2"
           >
             <BsLink45Deg />
             Ver mas
